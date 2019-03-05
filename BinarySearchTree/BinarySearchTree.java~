@@ -1,0 +1,17 @@
+public class BinarySearchTree<Data> {
+	
+	public class Node<Data>{
+		Node left, right;
+		Data d;
+		public Node(Node left, Node right, Data d){
+			this.left = left;
+			this.right = right;
+			this.d = d;		
+	}
+
+
+	Node head;
+	public BinarySearchTree(Data head){
+		this.head = new Node(null, null, head);			
+	}
+}
